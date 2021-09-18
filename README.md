@@ -10,7 +10,7 @@ The project includes C++ optimized vector library, unit tests, integration tests
 * The amount of memory allowed for the one vector's instance is calculated by the formula:
 	_sizeof(vector<T>) <= max(2*sizeof(void*), sizeof(void*) + sizeof(T))_
 * It's restricted to allocate more than one piece of memory at the same time.
-* It's possible that $T$ doesn't have a default constructor. 
+* It's possible that _T_ doesn't have a default constructor. 
 * __Exception guarantees__: 
 	* _base_ for _insert_ and _erase_
 	* _noexcept_ for all the _const_ methods
